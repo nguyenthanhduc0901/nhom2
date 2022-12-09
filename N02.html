@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Website_nhom2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <style>
+        body{
+            font-family: arial;
+            font-size: 17px;
+            background-image: url();
+            background-size: cover;
+            background-position-x: 0;
+        }
+        #header{
+            background-color: #00CAFF;
+        }
+        .container{
+            max-width: 960px;
+            margin: 0px auto;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            justify-items: center;
+        }
+        #logo{
+            padding: 8px 0px;
+
+        }
+        #logo img{
+            max-width: 170px;
+            height: auto;
+        }
+        #main-menu{
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        #main-menu li{
+            position: relative;
+        }
+        #main-menu li a{
+            color: #f8f8f8;
+            display: block;
+            padding: 18px 20px;
+            text-decoration: none;
+        }
+        #main-menu ul.sub-menu{
+            position: absolute;
+            background-color: #00CAFF;
+            padding: 15px 0px;
+            list-style: none;
+            width: 200px;
+            border: 1px solid #b0b0b0;
+            display: none;
+        }
+        #main-menu li:hover ul.sub-menu{
+            display: block;
+        }
+        #main-menu ul.sub-menu a{
+            padding: 8px 15px;
+            border-bottom: 1px solid #b0b0b0;
+        }
+        #main-menu ul.sub-menu li:hover a{
+            border-bottom: 1px solid #ffffff;
+        }
+        #main-menu ul.sub-menu li:last-child a{
+            border: none;
+        }
+        #main-menu>li>a{
+            position: relative;
+        }
+        #main-menu>li>a::before{
+            content: "";
+            height: 4px;
+            width:  0px;
+            background-color: #0e7dcc;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            transition: 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+        }
+        #main-menu>li:hover>a::before{
+            width: 100%;
+        }
+        #main-menu .sub-menu li:hover a{
+            color: rgb(16, 7, 71);
+        }
+        #main-menu>li.arrow::after{
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            content: "\f107";
+            color: #ffffff;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            padding: 18px 0px;
+        }
+    </style>
+    <div id="wrapper">
+        <div id="header">
+           <nav class="container">
+            <a href="" id="logo">
+                <img src="images/logo.png" alt="logo">
+            </a>
+            <ul id="main-menu">
+                <li><a href="">Trang chủ</a></li>
+                <li class="arrow">
+                    <a href="">Thành viên</a>
+                    <ul class="sub-menu">
+                        <li><a href="ThanhVien/SV01.html">Thành viên 1</a></li>
+                        <li><a href="">Thành viên 2</a></li>
+                        <li><a href="">Thành viên 3</a></li>
+                        <li><a href="">Thành viên 4</a></li>
+                        <li><a href="">Thành viên 5</a></li>
+                        <li><a href="">Thành viên 6</a></li>
+                        <li><a href="">Thành viên 7</a></li>
+                    </ul>
+                </li>
+                <li class="arrow">
+                    <a href="">Tài liệu tham khảo</a>
+                    <ul class="sub-menu">
+                        <li><a href="">Tài liệu HTML</a></li>
+                        <li><a href="">Tài liệu CSS</a></li>
+                        <li><a href="">Video tham khảo</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Báo cáo nhóm</a></li>
+                <li><a href="">Liên hệ</a></li>
+            </ul>
+           </nav>
+        </div>
+    </div>
+    <h1 style="font-size: 25px; text-align: center;"> Giới thiệu về nhóm 2 </h1>
+</body>
+</html>
